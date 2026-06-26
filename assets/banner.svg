@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="medai-clinical-ner banner">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect x="0" y="0" width="6" height="320" fill="url(#accent)"/>
+
+  <g font-family="ui-sans-serif, system-ui, sans-serif">
+    <text x="60" y="74" fill="#94a3b8" font-size="14" letter-spacing="3">03 · MEDAI · CLINICAL NLP</text>
+    <text x="60" y="148" fill="#f8fafc" font-size="56" font-weight="700">medai-clinical-ner</text>
+    <text x="60" y="196" fill="#cbd5e1" font-size="22">Biomedical entity extraction from free-text notes. CLI + FastAPI.</text>
+    <text x="60" y="226" fill="#94a3b8" font-size="18">HuggingFace · span normalization · diseases · drugs · doses</text>
+
+    <g transform="translate(60,258)">
+      <g><rect rx="14" ry="14" width="160" height="32" fill="#8b5cf6" opacity="0.18" stroke="#8b5cf6"/>
+         <text x="80" y="21" fill="#8b5cf6" font-size="14" text-anchor="middle">Transformers</text></g>
+      <g transform="translate(172,0)"><rect rx="14" ry="14" width="110" height="32" fill="#3b82f6" opacity="0.18" stroke="#3b82f6"/>
+         <text x="55" y="21" fill="#3b82f6" font-size="14" text-anchor="middle">FastAPI</text></g>
+      <g transform="translate(294,0)"><rect rx="14" ry="14" width="180" height="32" fill="#10b981" opacity="0.18" stroke="#10b981"/>
+         <text x="90" y="21" fill="#10b981" font-size="14" text-anchor="middle">biomedical-ner-all</text></g>
+    </g>
+  </g>
+
+  <g transform="translate(820,80)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14">
+    <rect width="320" height="180" rx="14" fill="#0b1220" stroke="#334155"/>
+    <text x="18" y="38" fill="#cbd5e1">"</text>
+    <text x="28" y="38" fill="#cbd5e1">Patient on </text>
+    <tspan><rect x="115" y="22" width="86" height="22" fill="#8b5cf6" opacity="0.28"/></tspan>
+    <text x="120" y="38" fill="#a78bfa">metformin</text>
+    <text x="206" y="38" fill="#cbd5e1"> 1000mg,</text>
+    <text x="18" y="66" fill="#cbd5e1">hx of </text>
+    <rect x="60" y="50" width="80" height="22" fill="#10b981" opacity="0.28"/>
+    <text x="64" y="66" fill="#34d399">diabetes</text>
+    <text x="146" y="66" fill="#cbd5e1"> and</text>
+    <rect x="178" y="50" width="110" height="22" fill="#10b981" opacity="0.28"/>
+    <text x="184" y="66" fill="#34d399">hypertension</text>
+    <text x="18" y="106" fill="#64748b">DRUG</text>
+    <rect x="64" y="92" width="14" height="14" fill="#8b5cf6"/>
+    <text x="86" y="106" fill="#94a3b8">→ metformin (0.97)</text>
+    <text x="18" y="128" fill="#64748b">DISEASE</text>
+    <rect x="78" y="114" width="14" height="14" fill="#10b981"/>
+    <text x="100" y="128" fill="#94a3b8">→ diabetes (0.99)</text>
+    <text x="18" y="150" fill="#64748b">DOSE</text>
+    <rect x="64" y="136" width="14" height="14" fill="#f59e0b"/>
+    <text x="86" y="150" fill="#94a3b8">→ 1000 mg (0.91)</text>
+  </g>
+</svg>
